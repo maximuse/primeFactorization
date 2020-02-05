@@ -4,8 +4,8 @@
 void primeFactors(unsigned int n) {
     unsigned int i = 2;
 
-    while(n > 1) {
-        if(n % i) {
+    while (n > 1) {
+        if (n % i) {
             i++;
         }
         else {
