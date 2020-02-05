@@ -1,8 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void primeFactors(unsigned int n) {
-    unsigned int i = 2;
+int main() {
+    unsigned int n,
+                 i = 2;
+
+    printf("Enter a number: ");
+    scanf("%u", &n);
+    printf("\n");
 
     while (n > 1) {
         if (n % i) {
@@ -13,15 +18,8 @@ void primeFactors(unsigned int n) {
             n /= i;
         }
     }
-}
 
-int main() {
-    unsigned int n;
-
-    printf("Enter a number: ");
-    scanf("%u", &n);
-    primeFactors(n);
-    printf("\n");
+    printf("\n\n");
 
     system("PAUSE");
 	return 0;
